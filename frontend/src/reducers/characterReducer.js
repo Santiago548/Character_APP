@@ -1,1 +1,7 @@
-export default (state = { characters: [], loading: false})
+export default (state = { characters: [], loading: false}, action) => {
+    switch(action.type){
+        
+        default:
+            return state
+    }
+}
