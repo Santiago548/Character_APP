@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './App.css';
 import { getCharacters } from './actions/characters'
+import CharacterForm from './containers/CharacterForm';
 
 class App extends Component {
 
@@ -20,6 +21,8 @@ class App extends Component {
           {this.props.loading ? <h5>Loading Characters...</h5> : characters}
         </ul>
         <hr/>
+        <h5> Create Character: </h5>
+        <CharacterForm />
       </div>
     );
   }
