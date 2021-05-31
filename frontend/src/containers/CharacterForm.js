@@ -25,8 +25,8 @@ export default class CharacterForm extends Component {
         return (
             <div>
                 <form>
-                    <label>firstname:</label>
-                    <input type="text" value={this.state.firstname}/>
+                    <label for='firstname'>firstname:</label>
+                    <input type="text" id='firstname' value={this.state.firstname}/>
                     <br/>
                     <label>lastname:</label>
                     <input type="text" value={this.state.lastname}/>
@@ -55,23 +55,65 @@ export default class CharacterForm extends Component {
                     <label>Story Hook:</label>
                     <input type="text" value={this.state.storyhook}/>
                     <br/>
-                    <label>Strength:</label>
-                    <input type="text" value={this.state.strength}/>
+                    <label for="strength">Strength:</label>
+                    <select id="strength" name="strength" value={this.state.strength}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                     <br/>
-                    <label>Dexterity:</label>
-                    <input type="text" value={this.state.dexterity}/>
+                    <label for="dexterity">Dexterity:</label>
+                    <select id="dexterity" name="dexterity" value={this.state.dexterity}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                     <br/>
-                    <label>Constitution:</label>
-                    <input type="text" value={this.state.constitution}/>
+                    <label for="constitution">Constitution:</label>
+                    <select id="constitution" name="constitution" value={this.state.constitution}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                     <br/>
-                    <label>intelligence:</label>
-                    <input type="text" value={this.state.intelligence}/>
+                    <label for="intelligence">Intelligence:</label>
+                    <select id="intelligence" name="intelligence" value={this.state.intelligence}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                     <br/>
-                    <label>Wisdom:</label>
-                    <input type="text" value={this.state.wisdom}/>
+                    <label for="wisdom">Wisdom:</label>
+                    <select id="wisdom" name="wisdom" value={this.state.wisdom}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                     <br/>
-                    <label>Charisma:</label>
-                    <input type="text" value={this.state.charisma}/>
+                    <label for="charisma">Charisma:</label>
+                    <select id="charisma" name="charisma" value={this.state.charisma}>
+                        <option value='1'>+ 1</option>
+                        <option value="2">+ 2</option>
+                        <option value="3">+ 3</option>
+                        <option value="4">+ 4</option>
+                        <option value="5">+ 5</option>
+                        <option value="6">+ 6</option>
+                    </select>
                 </form>
             </div>
         )
