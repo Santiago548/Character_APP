@@ -9,3 +9,22 @@ export const getCharacters = () => {
          }))
     }
 }
+
+export const addCharacter = (character) => {
+    return (dispatch) => {
+        dispatch({ type: "ADDING_CHARACTER" })
+        const configObj = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(character) 
+        }
+        fetch('/characters', configObj)
+        .then(res => res.json())
+        .then(character => dispatch({
+            type: "CHARACTER_ADDED",
+            payload: character
+        }))
+    }
+}

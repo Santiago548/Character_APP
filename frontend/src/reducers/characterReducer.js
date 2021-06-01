@@ -11,6 +11,16 @@ export default (state = { characters: [], loading: false}, action) => {
                 characters: action.payload,
                 loading: false
             }
+        case "ADDING_CHARACTER":
+            return {
+                ...state,
+                loading: true
+            }
+
+        case "CHARACTER_ADDED":
+            return {
+
+            }
         default:
             return state
     }

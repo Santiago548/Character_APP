@@ -1,7 +1,9 @@
 // class component to return state
-import React, { Component } from 'react' 
+import React, { Component } from 'react'
+import { addCharacter } from '../actions/characters'
+import { connect } from 'react-redux'
 
-export default class CharacterForm extends Component {
+class CharacterForm extends Component {
     state = {
         firstname: "",
         lastname: "",
@@ -21,101 +23,69 @@ export default class CharacterForm extends Component {
         charisma: ""
     }
 
+    handleChange = event => {
+        const {name, value} = event.target
+        this.setState({
+            [name]: value
+        })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault()
+        const character = {
+            firstname: this.state.firstname,
+            lastname: this.state.lastname,
+            gender: this.state.gender,
+            age: this.state.age,
+            region: this.state.region,
+            trait1: this.state.trait1,
+            trait2: this.state.trait2,
+            background: this.state.background,
+            storyhook: this.state.storyhook
+        }
+            this.props.addCharacter(character)
+    }
+
     render() {
         return (
             <div>
-                <form>
-                    <label for='firstname'>firstname:</label>
-                    <input type="text" id='firstname' value={this.state.firstname}/>
+                <form onSubmit={this.handleSubmit}>
+                    <label>firstname:</label>
+                    <input type="text"
+                        name = "firstname" 
+                        value={this.state.firstname}
+                        onChange={this.handleChange}
+                        />
                     <br/>
                     <label>lastname:</label>
-                    <input type="text" value={this.state.lastname}/>
+                    <input type="text" name ="lastname" value={this.state.lastname} onChange={this.handleChange}/>
                     <br/>
-                    <label>Sex:</label>
-                    <input type="text" value={this.state.sex}/>
+                    <label>Gender:</label>
+                    <input type="text" name ="gender" value={this.state.gender} onChange={this.handleChange}/>
                     <br/>
                     <label>Age:</label>
-                    <input type="text" value={this.state.age}/>
+                    <input type="number" name = "age" value={this.state.age} onChange={this.handleChange}/>
                     <br/>
-                    <label>Race:</label>
-                    <input type="text" value={this.state.race}/>
-                    <br/>
-                    <label>Alignment:</label>
-                    <input type="text" value={this.state.alignment}/>
+                    <label>Region:</label>
+                    <input type="text" name = "region" value={this.state.region} onChange={this.handleChange}/>
                     <br/>
                     <label>Trait 1:</label>
-                    <input type="text" value={this.state.trait1}/>
+                    <input type="text" name = "trait1" value={this.state.trait1} onChange={this.handleChange}/>
                     <br/>
                     <label>Trait 2:</label>
-                    <input type="text" value={this.state.trait2}/>
+                    <input type="text" name = "trait2" value={this.state.trait2} onChange={this.handleChange}/>
                     <br/>
                     <label>Background:</label>
-                    <input type="text" value={this.state.background}/>
+                    <input type="text" name = "background" value={this.state.background} onChange={this.handleChange}/>
                     <br/>
                     <label>Story Hook:</label>
-                    <input type="text" value={this.state.storyhook}/>
+                    <input type="text" name = "storyhook" value={this.state.storyhook} onChange={this.handleChange}/>
                     <br/>
-                    <label for="strength">Strength:</label>
-                    <select id="strength" name="strength" value={this.state.strength}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
-                    <br/>
-                    <label for="dexterity">Dexterity:</label>
-                    <select id="dexterity" name="dexterity" value={this.state.dexterity}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
-                    <br/>
-                    <label for="constitution">Constitution:</label>
-                    <select id="constitution" name="constitution" value={this.state.constitution}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
-                    <br/>
-                    <label for="intelligence">Intelligence:</label>
-                    <select id="intelligence" name="intelligence" value={this.state.intelligence}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
-                    <br/>
-                    <label for="wisdom">Wisdom:</label>
-                    <select id="wisdom" name="wisdom" value={this.state.wisdom}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
-                    <br/>
-                    <label for="charisma">Charisma:</label>
-                    <select id="charisma" name="charisma" value={this.state.charisma}>
-                        <option value='1'>+ 1</option>
-                        <option value="2">+ 2</option>
-                        <option value="3">+ 3</option>
-                        <option value="4">+ 4</option>
-                        <option value="5">+ 5</option>
-                        <option value="6">+ 6</option>
-                    </select>
+                    <button type="submit">submit</button>
                 </form>
             </div>
         )
     }
 }
+
+export default connect(null, { addCharacter })(CharacterForm)
