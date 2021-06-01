@@ -15,19 +15,20 @@ class App extends Component {
   }
 
   render(){
-    const characters = this.props.characters.map((character, i) => <li key={i}>{character.firstname} {character.lastname}<button id={character.id} onClick={this.handleclick}>X</button></li>)
+    const characters = this.props.characters.map((character, i) => <fieldset className="App-fieldset"><button id={character.id} onClick={this.handleclick}>x</button> <div key={i}> First Name: {character.firstname} <br /> Last Name: {character.lastname}</div></fieldset>)
 
     return (
-      <div className="App">
-        <header >
+      <div>
+        <header className='app-title'>
           <h1>Character APP</h1>
+          <hr/>
         </header>
-        <ul>
-          {this.props.loading ? <h5>Loading Characters...</h5> : characters}
-        </ul>
-        <hr/>
         <h5> Create Character: </h5>
         <CharacterForm />
+        <br/>
+        <div>
+          {this.props.loading ? <h5>Loading Characters...</h5> : characters}
+        </div>
       </div>
     );
   }

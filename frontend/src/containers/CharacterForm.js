@@ -53,7 +53,7 @@ class CharacterForm extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="character-form">
                     <label>firstname:</label>
                     <input type="text"
                         name = "firstname" 
@@ -61,28 +61,28 @@ class CharacterForm extends Component {
                         onChange={this.handleChange}
                         />
                     <br/>
-                    <label>lastname:</label>
+                    <label>lastname: </label>
                     <input type="text" name ="lastname" value={this.state.lastname} onChange={this.handleChange}/>
                     <br/>
-                    <label>Gender:</label>
+                    <label>Gender: </label>
                     <input type="text" name ="gender" value={this.state.gender} onChange={this.handleChange}/>
                     <br/>
-                    <label>Age:</label>
+                    <label>Age: </label>
                     <input type="number" name = "age" value={this.state.age} onChange={this.handleChange}/>
                     <br/>
-                    <label>Region:</label>
+                    <label>Region: </label>
                     <input type="text" name = "region" value={this.state.region} onChange={this.handleChange}/>
                     <br/>
-                    <label>Trait 1:</label>
+                    <label>Trait 1: </label>
                     <input type="text" name = "trait1" value={this.state.trait1} onChange={this.handleChange}/>
                     <br/>
-                    <label>Trait 2:</label>
+                    <label>Trait 2: </label>
                     <input type="text" name = "trait2" value={this.state.trait2} onChange={this.handleChange}/>
                     <br/>
-                    <label>Background:</label>
+                    <label>Background: </label>
                     <input type="text" name = "background" value={this.state.background} onChange={this.handleChange}/>
                     <br/>
-                    <label>Story Hook:</label>
+                    <label>Story Hook: </label>
                     <input type="text" name = "storyhook" value={this.state.storyhook} onChange={this.handleChange}/>
                     <br/>
                     <button type="submit">submit</button>
