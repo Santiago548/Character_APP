@@ -7,20 +7,13 @@ class CharacterForm extends Component {
     state = {
         firstname: "",
         lastname: "",
-        sex: "",
+        gender: "",
         age: "",
-        race: "",
-        alignment: "",
+        region: "",
         trait1: "",
         trait2: "",
         background: "",
         storyhook: "",
-        strength: "",
-        dexterity: "",
-        constitution: "",
-        intelligence: "",
-        wisdom: "",
-        charisma: ""
     }
 
     handleChange = event => {
@@ -44,6 +37,17 @@ class CharacterForm extends Component {
             storyhook: this.state.storyhook
         }
             this.props.addCharacter(character)
+            this.setState({
+                firstname: "",
+                lastname: "",
+                gender: "",
+                age: "",
+                region: "",
+                trait1: "",
+                trait2: "",
+                background: "",
+                storyhook: "",
+            })
     }
 
     render() {

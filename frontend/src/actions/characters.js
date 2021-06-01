@@ -13,7 +13,7 @@ export const getCharacters = () => {
 export const addCharacter = (character) => {
     return (dispatch) => {
         dispatch({ type: "ADDING_CHARACTER" })
-        const configObj = {
+        let configObj = {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -27,4 +27,21 @@ export const addCharacter = (character) => {
             payload: character
         }))
     }
+}
+
+export const deleteCharacter = (id) => {
+    return (dispatch) => {
+        dispatch({ type: "DELETING_CHARACTER"})
+        let configObj = {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            } 
+        }
+        fetch(`/characters/${id}`, configObj)
+        .then(() => dispatch({
+            type: "CHARACTER_DELETED",
+            payload: id
+        }))
+    }    
 }

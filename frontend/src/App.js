@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './App.css';
-import { getCharacters } from './actions/characters'
+import { getCharacters, deleteCharacter } from './actions/characters'
 import CharacterForm from './containers/CharacterForm';
 
 class App extends Component {
@@ -10,8 +10,13 @@ class App extends Component {
     this.props.getCharacters()
   }
 
+  handleclick = event => {
+    this.props.deleteCharacter(event.target.id)
+  }
+
   render(){
-    const characters = this.props.characters.map((character, i) => <li key={i}>{character.firstname}<button id={character.id}>X</button></li>)
+    const characters = this.props.characters.map((character, i) => <li key={i}>{character.firstname} {character.lastname}<button id={character.id} onClick={this.handleclick}>X</button></li>)
+
     return (
       <div className="App">
         <header >
@@ -36,4 +41,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, { getCharacters })(App);
+export default connect(mapStateToProps, { getCharacters, deleteCharacter })(App);
