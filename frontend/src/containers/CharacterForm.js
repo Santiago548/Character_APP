@@ -121,7 +121,7 @@ class CharacterForm extends Component {
                         <option name="region" value="Nepal">Nepal</option>
                         <option name="region" value="Netherlands">Netherlands</option>
                         <option name="region" value="New Zealand">New Zealand</option>
-                        <option name="region" value=">Nigeria">>Nigeria</option>
+                        <option name="region" value=">Nigeria">Nigeria</option>
                         <option name="region" value="Norway">Norway</option>
                         <option name="region" value="Pakistan">Pakistan</option>
                         <option name="region" value="Poland">Poland</option>

@@ -23,6 +23,8 @@
   padding: 10px;
   height: 50%;
   width: 50%;
+  border-radius: 10px;
+  border-width: 5px;
 }
 
 .character-button {
@@ -30,9 +32,26 @@
 }
 
 .character-info {
-  padding: 5px
-
+  padding: 5px;
+  border-width: 3px;
+  height: 75%;
+  width: 75%;
 }
+
+.personality-traits {
+  padding: 5px;
+  border-width: 3px;
+  height: 75%;
+  width: 75%;
+}
+
+.story-elements {
+  padding: 5px;
+  border-width: 3px;
+  height: 75%;
+  width: 75%;
+}
+
 
 .character-form {
   padding-left: 10px;
@@ -40,4 +59,6 @@
 
 .card-legend {
   background-color: rgb(174, 174, 174);
+  border-color: black;
+  border-radius: 2px;
 }
