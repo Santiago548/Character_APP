@@ -12,7 +12,7 @@ class Characters extends Component {
       <div>
         <hr />
         <div>
-          <h2>Characters</h2>
+          <h3>CHARACTERS</h3>
         </div>
         <hr />
         <div>

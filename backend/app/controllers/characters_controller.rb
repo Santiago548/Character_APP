@@ -46,6 +46,6 @@ class CharactersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def character_params
-      params.require(:character).permit(:firstname, :lastname, :sex, :age, :race, :alignment, :trait1, :trait2, :background, :storyhook, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma)
+      params.require(:character).permit(:firstname, :lastname, :gender, :age, :region, :alignment, :trait1, :trait2, :background, :storyhook)
     end
 end
