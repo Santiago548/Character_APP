@@ -21,6 +21,8 @@
   align-items: left;
   justify-content: left;
   padding: 10px;
+  height: 50%;
+  width: 50%;
 }
 
 .character-button {
@@ -29,8 +31,13 @@
 
 .character-info {
   padding: 5px
+
 }
 
 .character-form {
   padding-left: 10px;
+}
+
+.card-legend {
+  background-color: rgb(174, 174, 174);
 }

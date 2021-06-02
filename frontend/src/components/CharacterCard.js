@@ -13,24 +13,23 @@ const CharacterCard = ({ character, deleteCharacter }) =>
             <span aria-hidden="true">&times;</span>
           </button>
           <div className='character-info'> 
-          
-          <b>Character Information:</b>
-          <hr/>
-            First Name: {character.firstname}<br />
-            Last Name: {character.lastname}<br />
-            Gender: {character.gender}<br />
-            Age: {character.age}<br />
-            Region: {character.region}<br />
-            <hr/>
-            <b>Personality Traits:</b>
-            <hr/>
-            Trait 1: {character.trait1}<br />
-            Trait 2: {character.trait2}<br />
-            <hr /> 
-            <b>Story Elements:</b>
-            <hr/>
-            Background: {character.background}<br />
-            Story Hook: {character.storyhook}<br />
+            <fieldset className='character-info'>
+              <legend className='card-legend'><b>CHARACTER INFORMATION:</b></legend>
+                <b>Name</b> {character.firstname} {character.lastname}< br/> 
+                <b>Gender:</b> {character.gender}<br />
+                <b>Age:</b> {character.age}<br />
+                <b>Region:</b> {character.region}<br />
+            </fieldset>
+            <fieldset className='personality-traits'>
+              <legend className='card-legend'><b>PERSONALITY TRAITS:</b></legend>
+                <b>Trait 1:</b> {character.trait1}<br />
+                <b>Trait 2:</b> {character.trait2}<br />
+            </fieldset>
+            <fieldset className='story-elements'>
+              <legend className='card-legend'><b>STORY ELEMENTS:</b></legend>
+                <b>Background:</b> {character.background}<br />
+                <b>Story Hook:</b> {character.storyhook}<br />
+            </fieldset>
             </div>
         </fieldset>
       </div>
