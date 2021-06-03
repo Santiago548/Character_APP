@@ -5,7 +5,7 @@ import { getCharacters } from './actions/characters'
 // deleteCharacter
 import CharacterForm from './containers/CharacterForm';
 import Characters from './containers/Characters'
-import RandomCharacterForm from './containers/RandomCharacterForm';
+import RandomCharacterButton from './containers/RandomCharacterButton';
 
 class App extends Component {
 
@@ -28,7 +28,7 @@ class App extends Component {
         </header>
         <h5> Create Character: </h5>
         <CharacterForm />
-        <RandomCharacterForm />
+        <RandomCharacterButton />
         <br/>
         <div>
           {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
