@@ -59,7 +59,8 @@ class CharacterForm extends Component {
                         <h2 className='app-title'>CHARACTER FORM</h2>
                     </div>
                 <hr />
-                <form onSubmit={this.handleSubmit} className="character-form">
+                <div className="character-form">
+                <form onSubmit={this.handleSubmit} >
                     <label className='input-label'>firstname:</label>
                     <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
                     <br/>
@@ -94,6 +95,7 @@ class CharacterForm extends Component {
                     <br/>
                     <button type="submit">submit</button>
                 </form>
+                </div>
             </div>
         )
     }

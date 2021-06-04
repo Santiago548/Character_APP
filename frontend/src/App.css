@@ -64,7 +64,7 @@
 }
 
 .app-header {
-  grid-area: 'app-header';
+  /* grid-area: 'app-header'; */
   background: aquamarine;
   text-align: center;
   min-height: 5vh;
@@ -74,7 +74,7 @@
 }
 
 .app-title {
-  grid-area: 'app-title';
+  /* grid-area: 'app-title'; */
   background: aquamarine;
   text-align: center;
   height: 95%;
@@ -85,27 +85,27 @@
   grid-area: 'character-form';
   padding-left: 10px;
   border-style: ridge;
-  width: 500px;
-  border-width: 5px;
 }
 
 .character-card {
   grid-area: 'character-card';
 }
 .random-button {
-  grid-area: 'random'
+  grid-area: 'random';
+  align-items: center;
+}
+
+.border {
+  grid-area: border;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 40% 10% 10% 40%;
+  grid-template-columns: 30% 2% 18% 50%;
   grid-template-rows: auto;
-  row-gap: 5px;
   justify-items: stretch;
   grid-template-areas: 
-  "app-header app-header app-header app-header"
-  "app-title app-title app-title app-title"
-  "character-form random random character-card"
-  "character-form random random character-card"
-  "character-form random random character-card";
+  /* " app-header app-header app-header app-header"
+  " app-titles app-titles app-title app-title" */
+  "character-form . random character-card";
 }

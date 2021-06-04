@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   render(){
-    // const characters = this.props.characters.map((character, i) => <fieldset className="App-fieldset"><button className='character-button' id={character.id} onClick={this.handleclick}>x</button> <div className='character-info' key={i}> First Name: {character.firstname} <br /> Last Name: {character.lastname}</div></fieldset>)
 
     return (
       <div>
@@ -28,12 +27,12 @@ class App extends Component {
         </header>
         <h2> Create Character: </h2>
         <div className='container'>
-        <CharacterForm />
-        <br/>
-        <RandomCharacterButton />
-        <div>
-          {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
-        </div>
+          <CharacterForm />
+          <br/>
+          <RandomCharacterButton />
+          <div>
+            {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
+          </div>
         </div>
       </div>
     );
