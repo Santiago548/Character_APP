@@ -26,9 +26,11 @@ class App extends Component {
           <h1>Character APP</h1>
           <hr/>
         </header>
-        <h5> Create Character: </h5>
+        <h2> Create Character: </h2>
+        <div className='container'>
         <CharacterForm />
         <RandomCharacterButton />
+        </div>
         <br/>
         <div>
           {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
