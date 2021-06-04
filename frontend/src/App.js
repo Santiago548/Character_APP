@@ -29,11 +29,11 @@ class App extends Component {
         <h2> Create Character: </h2>
         <div className='container'>
         <CharacterForm />
-        <RandomCharacterButton />
-        </div>
         <br/>
+        <RandomCharacterButton />
         <div>
           {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
+        </div>
         </div>
       </div>
     );

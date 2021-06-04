@@ -12,7 +12,7 @@ class Characters extends Component {
       <div>
         <hr />
         <div>
-          <h3>CHARACTERS</h3>
+          <h2 className='app-title'>CHARACTERS</h2>
         </div>
         <hr />
         <div>

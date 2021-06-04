@@ -54,6 +54,11 @@ class CharacterForm extends Component {
     render() {
         return (
             <div>
+                 <hr />
+                    <div>
+                        <h2 className='app-title'>CHARACTER FORM</h2>
+                    </div>
+                <hr />
                 <form onSubmit={this.handleSubmit} className="character-form">
                     <label className='input-label'>firstname:</label>
                     <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
