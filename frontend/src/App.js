@@ -6,6 +6,7 @@ import { getCharacters } from './actions/characters'
 import CharacterForm from './containers/CharacterForm';
 import Characters from './containers/Characters'
 import RandomCharacterButton from './containers/RandomCharacterButton';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends Component {
 

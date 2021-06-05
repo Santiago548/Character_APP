@@ -11,9 +11,7 @@ class Characters extends Component {
     return (
       <div>
         <hr />
-        <div>
           <h2 className='app-title'>CHARACTERS</h2>
-        </div>
         <hr />
         <div>
           <div>
