@@ -7,6 +7,8 @@ import CharacterForm from './containers/CharacterForm';
 import Characters from './containers/Characters'
 import RandomCharacterButton from './containers/RandomCharacterButton';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { About } from "./containers/About"
+import Navigation from './components/Navigation'
 
 class App extends Component {
 
@@ -21,9 +23,15 @@ class App extends Component {
   render(){
 
     return (
+      <Router>
+        <Navigation /> 
       <div>
         <header className='app-header'>
           <h1>Character APP</h1>
+          
+          <Switch>
+            <Route exact path="/about" component={About}>About</Route>
+          </Switch>
           <hr/>
         </header>
         <h2> Create Character: </h2>
@@ -36,6 +44,7 @@ class App extends Component {
           </div>
         </div>
       </div>
+      </Router>
     );
   }
 }
