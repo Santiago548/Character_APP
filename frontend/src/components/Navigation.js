@@ -13,12 +13,29 @@ const Navigation = () => {
     return (
         <div>
             <NavLink
+            to='/home'
+            exact
+            style={link}
+            activeStyle={{
+                background: 'darkblue'
+            }}>Home</NavLink>
+
+            <NavLink
             to='/about'
             exact
             style={link}
             activeStyle={{
                 background: 'darkblue'
             }}>ABOUT</NavLink>
+
+
+            <NavLink
+            to='/search'
+            exact
+            style={link}
+            activeStyle={{
+                background: 'darkblue'
+            }}>Search</NavLink>
         </div>
     )
 }
