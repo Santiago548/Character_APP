@@ -59,42 +59,53 @@ class CharacterForm extends Component {
                         <h2 className='app-title'>CHARACTER FORM</h2>
                     </div>
                 <hr />
-                <div className="character-form">
-                <form onSubmit={this.handleSubmit} >
-                    <label className='input-label'>firstname:</label>
-                    <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
-                    <br/>
-                    <label className='input-label'>lastname: </label>
-                    <input type="text" name="lastname" className="form-input" value={this.state.lastname} onChange={this.handleChange}/>
-                    <br/>
-                    <label className='input-label'>Gender: </label>
-                    <select name="gender" value={this.state.gender} onChange={this.handleChange} className="form-input">
-                        <option></option>
-                        <option name="gender" value="Male">Male</option>
-                        <option name="gender" value="Female">Female</option>
-                        <option name="gender" value="Non-Binary">Non-Binary</option>
-                    </select>
-                    <br/>
-                    <label className='input-label'>Age: </label>
-                    <input type="number" className="form-input" name= "age" value={this.state.age} min='1' onChange={this.handleChange}/>
-                    <br/>
-                    <label className='input-label'>Region: </label>
-                    <input type="text" name="region" className="form-input" value={this.state.region} onChange={this.handleChange} />
-                    <br/>
-                    <label className='input-label'>Trait 1: </label>
-                    <input type="text" name="trait1" className="form-input" value={this.state.trait1} onChange={this.handleChange} />
-                    <br/>
-                    <label className='input-label'>Trait 2: </label>
-                    <input type="text" name="trait2" className="form-input" value={this.state.trait2} onChange={this.handleChange} />
-                    <br/>
-                    <label className='input-label'>Background: </label>
-                    <input type="text" name="background" className="form-input" value={this.state.background} onChange={this.handleChange}/>
-                    <br/>
-                    <label className='input-label'>Story Hook: </label>
-                    <input type="text" name="storyhook" className="form-input" value={this.state.storyhook} onChange={this.handleChange}/>
-                    <br/>
-                    <button type="submit">submit</button>
-                </form>
+                
+                <div className='form-container'>
+                <div className='notes'>
+                            <h3>HOW TO USE THE APP:</h3>
+                            <hr />
+                            <fieldset className='how-to'>    
+                            <span className='how-to'> To use the app you can fill out the form to the right and generate a character card by hitting the submit button. Or you can hit the fancy Random Character button and it will create a character for you.</span>
+                            </fieldset>
+                        </div>
+                    <div className="character-form">
+                        <form onSubmit={this.handleSubmit} >
+                            <label className='input-label'>firstname:</label>
+                            <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
+                            <br/>
+                            <label className='input-label'>lastname: </label>
+                            <input type="text" name="lastname" className="form-input" value={this.state.lastname} onChange={this.handleChange}/>
+                            <br/>
+                            <label className='input-label'>Gender: </label>
+                            <select name="gender" value={this.state.gender} onChange={this.handleChange} className="form-input">
+                                <option></option>
+                                <option name="gender" value="Male">Male</option>
+                                <option name="gender" value="Female">Female</option>
+                                <option name="gender" value="Non-Binary">Non-Binary</option>
+                            </select>
+                            <br/>
+                            <label className='input-label'>Age: </label>
+                            <input type="number" className="form-input" name= "age" value={this.state.age} min='1' onChange={this.handleChange}/>
+                            <br/>
+                            <label className='input-label'>Region: </label>
+                            <input type="text" name="region" className="form-input" value={this.state.region} onChange={this.handleChange} />
+                            <br/>
+                            <label className='input-label'>Trait 1: </label>
+                            <input type="text" name="trait1" className="form-input" value={this.state.trait1} onChange={this.handleChange} />
+                            <br/>
+                            <label className='input-label'>Trait 2: </label>
+                            <input type="text" name="trait2" className="form-input" value={this.state.trait2} onChange={this.handleChange} />
+                            <br/>
+                            <label className='input-label'>Background: </label>
+                            <textarea type="text" name="background" className="form-input-background" value={this.state.background} onChange={this.handleChange}/>
+                            <br/>
+                            <label className='input-label'>Story Hook: </label>
+                            <textarea type="text" name="storyhook" className="form-input-story-hook" value={this.state.storyhook} onChange={this.handleChange}/>
+                            <br/>
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                        
                 </div>
             </div>
         )
