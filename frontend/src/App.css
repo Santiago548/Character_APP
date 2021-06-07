@@ -7,6 +7,31 @@
   color: #61dafb;
 }
 
+
+.app-header {
+  /* grid-area: 'app-header'; */
+  background: #191d32;
+  color: white;
+  text-align: center;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(6px + 2vmin);
+}
+
+.app-title {
+  /* grid-area: 'app-title'; */
+  background-color: #282F44;
+  color: white;
+  text-align: center;
+  min-height: 5vh;
+  /* display: flex;
+  flex-direction: column; */
+  font-size: calc(6px + 2vmin);
+  height: 100%;
+  width: 100%;
+}
+
 .card-fieldset {
   background-color: rgb(27, 195, 225);
   display: flex;
@@ -55,48 +80,37 @@
 .input-label {
   display: flex;
   flex-direction: row;
-  
 }
 
 .form-input {
   border: rgb(0, 0, 0);
   border-style: ridge;
+  display: flex;
+  flex-direction: row;
 }
 
-.app-header {
-  /* grid-area: 'app-header'; */
-  background: aquamarine;
-  text-align: center;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(6px + 2vmin);
-}
-
-.app-title {
-  /* grid-area: 'app-title'; */
-  background-color: rgb(231, 144, 78);
-  text-align: center;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(6px + 2vmin);
-  height: 95%;
-  width: 95%;
-}
 
 .character-form {
   grid-area: 'character-form';
   padding-left: 10px;
   border-style: ridge;
+  border-radius: 10px;
+  border-width: 5px;
 }
 
 .character-card {
   grid-area: 'character-card';
 }
-.random {
+.random-form {
   grid-area: 'random';
-  align-items: center;
+  align-content: center;
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  margin: 35px;
+  position: relative;
+  top: 10%;
+  border-radius: 10px;
+  border-width: 5px;
 }
 
 .random-button {
@@ -107,13 +121,37 @@
   grid-area: border;
 }
 
+.random-button {
+  display: inline-block;
+  padding: 2px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: solid;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
+
+.random-button:hover {background-color: red}
+
+.random-button:active {
+  background-color: gold;
+  color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .container {
   display: grid;
-  grid-template-columns: 30% 2% 16% 50%;
+  grid-template-columns: 40% 0% 18% 40%;
   grid-template-rows: auto;
   justify-items: stretch;
   grid-template-areas: 
   /* " app-header app-header app-header app-header"
   " app-titles app-titles app-title app-title" */
-  "character-form . random character-card";
+  "character-form . random-form character-card";
 }
