@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { addCharacter } from '../actions/characters'
 import { connect } from 'react-redux'
 
-class RandomCharacterButton extends Component {
+class RandomCharacterScifi extends Component {
 
     constructor(props) {
         super(props)
@@ -80,12 +80,9 @@ class RandomCharacterButton extends Component {
     render() {
         return (
             <div>
-                <hr />
-                <div><h2 className='app-title'>| RANDOM |</h2></div>
-                <hr />
                 <fieldset className='random-form'>     
                 <form onSubmit={this.handleClick} >
-                    <button type="submit" className='random-button'>Random General Character</button>
+                    <button type="submit" className='random-button'>Random Sci-fi Character</button>
                 </form>
                 </fieldset>
             </div>
@@ -93,4 +90,4 @@ class RandomCharacterButton extends Component {
     }
 }
 
-export default connect(null, { addCharacter })(RandomCharacterButton)
+export default connect(null, { addCharacter })(RandomCharacterScifi)

@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import CharacterForm from './CharacterForm';
 import Characters from './Characters'
 import RandomCharacterButton from './RandomCharacterButton';
+import RandomCharacterScifi from './RandomCharacterScifi';
 
 class CharactersContainer extends Component {
     render (){
@@ -13,7 +14,10 @@ class CharactersContainer extends Component {
                 <div className='container'>
                     <CharacterForm />
                     <br/>
+                    <div>
                     <RandomCharacterButton />
+                    <RandomCharacterScifi />
+                    </div>
                 <div>
                     {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
                 </div>

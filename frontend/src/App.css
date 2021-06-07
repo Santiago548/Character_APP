@@ -217,6 +217,7 @@
   grid-template-rows: auto;
   justify-items: stretch;
   grid-template-areas: 
+  "character-form . random-form character-card"
   "character-form . random-form character-card";
 }
 
@@ -241,4 +242,8 @@ hr {
 
 .example {
   height: 12px;
+}
+
+.search-title {
+  text-align: center;
 }

@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import './App.css';
-import { getCharacters } from './actions/characters'
 // deleteCharacter
 // import CharacterForm from './containers/CharacterForm';
 // import Characters from './containers/Characters'
 // import RandomCharacterButton from './containers/RandomCharacterButton';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import './App.css';
+import { getCharacters } from './actions/characters'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { About } from "./containers/About"
-import { Search } from "./containers/Search"
+import Search  from "./containers/Search"
 import  Home from "./containers/CharactersContainer"
 import Navigation from './components/Navigation'
 
