@@ -56,7 +56,7 @@ class CharacterForm extends Component {
             <div>
                  <hr />
                     <div>
-                        <h2 className='app-title'>CHARACTER FORM</h2>
+                        <h2 className='app-title'>| CHARACTER FORM |</h2>
                     </div>
                 <hr />
                 
@@ -65,7 +65,44 @@ class CharacterForm extends Component {
                             <h3>HOW TO USE THE APP:</h3>
                             <hr />
                             <fieldset className='how-to'>    
-                            <span className='how-to'> To use the app you can fill out the form to the right and generate a character card by hitting the submit button. Or you can hit the fancy Random Character button and it will create a character for you.</span>
+                                <span className='how-to'> 
+                                    To use the app you can fill out the form to the right and generate a character card by hitting the submit button. Or you can hit the fancy Random Character button and it will create a character for you.
+                                </span>
+                                <hr />
+                                <h3 className='example'>EXAMPLE:</h3>
+                                <div className='how-to'>
+                                    <div className="character-card">
+                                    <div className="card-block">
+                                        <fieldset className="card-fieldset-how-to">
+                                        <div className='character-info'> 
+                                            <fieldset className='character-info'>
+                                            <legend className='card-legend-how-to'><b>CHARACTER INFORMATION:</b></legend>
+                                                <b>Name</b> Dominic Barajas< br/> 
+                                                <b>Gender:</b> Male<br />
+                                                <b>Age:</b> 31<br />
+                                                <b>Region:</b> United States<br />
+                                            </fieldset>
+                                            <fieldset className='personality-traits'>
+                                            <legend className='card-legend'><b>PERSONALITY TRAITS:</b></legend>
+                                                <b>Trait 1:</b> Humble<br />
+                                                <b>Trait 2:</b> Slow<br />
+                                            </fieldset>
+                                            <fieldset className='story-elements'>
+                                            <legend className='card-legend'><b>STORY ELEMENTS:</b></legend>
+                                                <b>Background:</b> Software Engineer<br />
+                                                <b>Story Hook:</b> Grew up with the ability to talk to all cats<br />
+                                            </fieldset>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div className="float-right"> 
+                                        <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                        </div>
+                                    
+                                    </div>
+                                    </div>
+                                </div>
+                            
                             </fieldset>
                         </div>
                     <div className="character-form">
@@ -102,7 +139,7 @@ class CharacterForm extends Component {
                             <label className='input-label'>Story Hook: </label>
                             <textarea type="text" name="storyhook" className="form-input-story-hook" value={this.state.storyhook} onChange={this.handleChange}/>
                             <br/>
-                            <button type="submit">submit</button>
+                            <button  className='button' type="submit">submit</button>
                         </form>
                     </div>
                         

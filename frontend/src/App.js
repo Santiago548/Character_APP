@@ -27,7 +27,6 @@ class App extends Component {
     return (
       <Router>
         <Navigation /> 
-  
         <header className='app-header'>
           <h1>Character APP</h1>
           </header>
@@ -36,7 +35,6 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/search" component={Search} />
           </Switch>
-          <hr/>
       </Router>
     );  
   }

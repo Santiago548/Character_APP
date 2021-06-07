@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 const link = {
     width: '100px',
-    padding: '17px',
-    background: 'blue',
+    padding: '20px',
+    background: 'white',
     textDecoration: "none",
-    color: "white"
+    color: "black"
 }
 
 const Navigation = () => {
@@ -17,7 +17,8 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'darkblue'
+                background: 'black',
+                color: 'white'
             }}>HOME</NavLink>
 
             <NavLink
@@ -25,7 +26,8 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'darkblue'
+                background: 'black',
+                color: 'white'
             }}>ABOUT</NavLink>
 
 
@@ -34,7 +36,8 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'darkblue'
+                background: 'black',
+                color: 'white'
             }}>SEARCH</NavLink>
         </div>
     )

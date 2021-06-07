@@ -10,7 +10,6 @@ class CharactersContainer extends Component {
     render (){
         return (
             <div>
-                <h2 className='app-title'> Create Character: </h2>
                 <div className='container'>
                     <CharacterForm />
                     <br/>
