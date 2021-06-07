@@ -39,6 +39,7 @@ class CharacterForm extends Component {
         }
             this.props.addCharacter(character)
             this.setState({
+                // setting: "",
                 firstname: "",
                 lastname: "",
                 gender: "",
@@ -77,6 +78,7 @@ class CharacterForm extends Component {
                                         <div className='character-info'> 
                                             <fieldset className='character-info'>
                                             <legend className='card-legend-how-to'><b>CHARACTER INFORMATION:</b></legend>
+                                                <b>Setting:</b> Normal <br />
                                                 <b>Name</b> Dominic Barajas< br/> 
                                                 <b>Gender:</b> Male<br />
                                                 <b>Age:</b> 31<br />
@@ -107,6 +109,14 @@ class CharacterForm extends Component {
                         </div>
                     <div className="character-form">
                         <form onSubmit={this.handleSubmit} >
+                        <label className='input-label'>Setting:</label>
+                        <select name="setting" value={this.state.setting} onChange={this.handleChange} className="form-input">
+                                <option></option>
+                                <option name="setting" value="Normal">Normal</option>
+                                <option name="setting" value="Sci-fi">Sci-fi</option>
+                                <option name="setting" value="Fantasy">Fantasy</option>
+                            </select>
+                            <br />
                             <label className='input-label'>firstname:</label>
                             <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
                             <br/>
