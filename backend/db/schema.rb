@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_05_29_222905) do
 
   create_table "characters", force: :cascade do |t|
+    t.string "setting"
     t.string "firstname"
     t.string "lastname"
     t.string "gender"
