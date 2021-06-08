@@ -30,6 +30,32 @@ const Navigation = () => {
                 color: 'white'
             }}>ABOUT</NavLink>
 
+            <NavLink
+            to='/general'
+            exact
+            style={link}
+            activeStyle={{
+                background: 'black',
+                color: 'white'
+            }}>General Characters</NavLink>
+
+            <NavLink
+            to='/scifi'
+            exact
+            style={link}
+            activeStyle={{
+                background: 'black',
+                color: 'white'
+            }}>Sci-fi Characters</NavLink>
+
+            <NavLink
+            to='/fantasy'
+            exact
+            style={link}
+            activeStyle={{
+                background: 'black',
+                color: 'white'
+            }}>Fantasy Characters</NavLink>
 
             <NavLink
             to='/search'

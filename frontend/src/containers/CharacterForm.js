@@ -27,6 +27,7 @@ class CharacterForm extends Component {
     handleSubmit = event => {
         event.preventDefault()
         const character = {
+            setting: this.state.setting,
             firstname: this.state.firstname,
             lastname: this.state.lastname,
             gender: this.state.gender,
@@ -39,7 +40,7 @@ class CharacterForm extends Component {
         }
             this.props.addCharacter(character)
             this.setState({
-                // setting: "",
+                setting: "",
                 firstname: "",
                 lastname: "",
                 gender: "",
@@ -112,7 +113,7 @@ class CharacterForm extends Component {
                         <label className='input-label'>Setting:</label>
                         <select name="setting" value={this.state.setting} onChange={this.handleChange} className="form-input">
                                 <option></option>
-                                <option name="setting" value="Normal">Normal</option>
+                                <option name="setting" value="General">General</option>
                                 <option name="setting" value="Sci-fi">Sci-fi</option>
                                 <option name="setting" value="Fantasy">Fantasy</option>
                             </select>

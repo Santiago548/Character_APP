@@ -9,7 +9,7 @@ class RandomCharacterButton extends Component {
         super(props)
         this.handleClick = this.handleClick.bind(this)
         this.state = {
-        // setting: "",
+        setting: "",
         firstname: "",
         lastname: "",
         gender: "",
@@ -65,7 +65,7 @@ class RandomCharacterButton extends Component {
         const storyhook = randomStoryhook
         
         const characterToAdd = {
-            // setting: "Normal",
+            setting: "General",
             firstname: this.state.firstname + firstname,
             lastname: this.state.lastname + lastname,
             gender: this.state.gender + gender,

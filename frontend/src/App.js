@@ -9,7 +9,10 @@ import { getCharacters } from './actions/characters'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { About } from "./containers/About"
 import Search  from "./containers/Search"
-import  Home from "./containers/CharactersContainer"
+import Home from "./containers/CharactersContainer"
+import General from "./containers/GeneralCharacters"
+import Scifi from "./containers/ScifiCharacters"
+import Fantasy from "./containers/FantasyCharacters"
 import Navigation from './components/Navigation'
 
 class App extends Component {
@@ -33,6 +36,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/general" component={General} />
+            <Route exact path="/scifi" component={Scifi} />
+            <Route exact path="/fantasy" component={Fantasy} />
             <Route exact path="/search" component={Search} />
           </Switch>
       </Router>
