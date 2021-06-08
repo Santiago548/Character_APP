@@ -37,7 +37,7 @@ const Navigation = () => {
             activeStyle={{
                 background: 'black',
                 color: 'white'
-            }}>General Characters</NavLink>
+            }}>GENERAL CHARACTERS</NavLink>
 
             <NavLink
             to='/scifi'
@@ -46,7 +46,7 @@ const Navigation = () => {
             activeStyle={{
                 background: 'black',
                 color: 'white'
-            }}>Sci-fi Characters</NavLink>
+            }}>SCI-fI CHARACTERS</NavLink>
 
             <NavLink
             to='/fantasy'
@@ -55,7 +55,7 @@ const Navigation = () => {
             activeStyle={{
                 background: 'black',
                 color: 'white'
-            }}>Fantasy Characters</NavLink>
+            }}>FANTASY CHARACTERS</NavLink>
 
             <NavLink
             to='/search'

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getCharacters } from '../actions/characters'
+import { getGeneralCharacters } from '../actions/characters'
 import Characters from './Characters'
 
 class GeneralCharacters extends Component {
 
     componentDidMount(){
-        this.props.getCharacters()
+        this.props.getGeneralCharacters()
       }
     
     render() {
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
     }
   }
 
-export default connect(mapStateToProps, { getCharacters })(GeneralCharacters);
+export default connect(mapStateToProps, { getGeneralCharacters })(GeneralCharacters);

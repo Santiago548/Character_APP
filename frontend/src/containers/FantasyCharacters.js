@@ -5,15 +5,15 @@ import Characters from './Characters'
 
 class FantasyCharacters extends Component {
 
-    componentDidMount(){
+  componentDidMount(){
         this.props.getFantasyCharacters()
       }
     
     render() {
 
         return (
-            <div>
-            <h1 className='character-title-filters'>Fantasy Characters List</h1>
+        <div>
+            <h1 className='character-title-filter'>Fantasy Characters List</h1>
             {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
         </div>
     )

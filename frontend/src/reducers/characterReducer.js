@@ -20,7 +20,7 @@ export default (state = { characters: [], loading: false}, action) => {
         case "GENERAL_CHARACTERS_LOADED":
             return {
                 ...state, 
-                characters: [...state.characters.filter(character => character.setting === "General")],
+                generalCharacters: [...state.characters.filter(character => character.setting === "General")],
                 loading: false
             }
         case "LOADING_SCIFI_CHARACTERS":
@@ -42,7 +42,7 @@ export default (state = { characters: [], loading: false}, action) => {
         case "FANTASY_CHARACTERS_LOADED":
             return {
                 ...state, 
-                characters: [...state.characters.filter(character => character.setting === "Fantasyl")],
+                characters: [...state.characters.filter(character => character.setting === "Fantasy")],
                 loading: false
             }
 
