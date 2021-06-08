@@ -13,7 +13,7 @@ class FantasyCharacters extends Component {
 
         return (
             <div>
-            <h1 className='fantasy-characters-title'>Fantasy Characters List</h1>
+            <h1 className='character-title-filters'>Fantasy Characters List</h1>
             {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
         </div>
     )

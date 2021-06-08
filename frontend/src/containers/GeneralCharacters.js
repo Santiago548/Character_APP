@@ -13,7 +13,7 @@ class GeneralCharacters extends Component {
 
         return (
             <div>
-            <h1 className='general-characters-title'>General Characters List</h1>
+            <h1 className='character-title-filter'>General Characters List</h1>
             {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
         </div>
     )
