@@ -7,6 +7,7 @@ class FantasyCharacters extends Component {
 
   componentDidMount(){
         this.props.getFantasyCharacters()
+        console.log('hi fnatasy characters')
       }
     
     render() {

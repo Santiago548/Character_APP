@@ -5,10 +5,11 @@ import Characters from './Characters'
 
 class GeneralCharacters extends Component {
 
-    componentDidMount(){
-        this.props.getGeneralCharacters()
-      }
-    
+  componentDidMount(){
+    this.props.getGeneralCharacters()
+    console.log('hi')
+  }
+
     render() {
 
         return (

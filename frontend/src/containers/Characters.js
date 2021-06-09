@@ -16,7 +16,7 @@ class Characters extends Component {
         <div>
           <div>
             <div>
-              {characters.map(character => <CharacterCard key={character.id} deleteCharacter={deleteCharacter} character={character} />)}
+              {characters.map(character => <CharacterCard key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
             </div>
           </div>
         </div>

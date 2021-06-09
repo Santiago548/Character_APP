@@ -7,6 +7,7 @@ class ScifiCharacters extends Component {
 
     componentDidMount(){
         this.props.getScifiCharacters()
+        console.log('hi scifi characters')
       }
     
     render() {

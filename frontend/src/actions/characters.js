@@ -15,9 +15,9 @@ export const getGeneralCharacters = () => {
         dispatch({ type: "LOADING_GENERAL_CHARACTERS" })
         fetch('/characters')
         .then(res => res.json())
-        .then(generalCharacters => dispatch({
+        .then(characters => dispatch({
             type: "GENERAL_CHARACTERS_LOADED",
-            payload: generalCharacters 
+            payload: characters 
          }))
     }
 }
@@ -27,9 +27,9 @@ export const getScifiCharacters = () => {
         dispatch({ type: "LOADING_SCIFI_CHARACTERS" })
         fetch('/characters')
         .then(res => res.json())
-        .then(scifiCharacters => dispatch({
+        .then(characters => dispatch({
             type: "SCIFI_CHARACTERS_LOADED",
-            payload: scifiCharacters 
+            payload: characters 
          }))
     }
 }
@@ -37,11 +37,11 @@ export const getScifiCharacters = () => {
 export const getFantasyCharacters = () => {
     return (dispatch) => {
         dispatch({ type: "LOADING_FANTASY_CHARACTERS" })
-        fetch('/fantsy')
+        fetch('/characters')
         .then(res => res.json())
-        .then(fantasyCharacters => dispatch({
+        .then(characters => dispatch({
             type: "FANTASY_CHARACTERS_LOADED",
-            payload: fantasyCharacters 
+            payload: characters 
          }))
     }
 }

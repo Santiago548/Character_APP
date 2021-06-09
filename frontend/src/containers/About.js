@@ -5,7 +5,9 @@ export const About = () => {
         <div>
             <h1 className='character-title-filter'>About Page</h1>
             <fieldset>
-                    <h2 className='character-title-filter'>Here is your 12 step guide for good character development:</h2>
+               <h2 className='character-title-filter'>I created this application to for anyone writting stories or trying to craft worlds who has trouble making characters. or just for practicing creating and writting stories. </h2>
+                    <hr />
+                    <h3 className='character-title-filter'>Here is some tips to help create a good character development:</h3>
                 <ul>
                     <li><h4>Create a background for your character</h4>
                         <ul>
