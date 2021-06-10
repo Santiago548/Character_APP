@@ -2,8 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const link = {
-    width: '100px',
-    padding: '20px',
+    width: '100%',
+    padding: '10px',
     background: 'white',
     textDecoration: "none",
     color: "black"
@@ -11,13 +11,13 @@ const link = {
 
 const Navigation = () => {
     return (
-        <div>
+        <div className='navlink'>   
             <NavLink
             to='/'
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>HOME</NavLink>
 
@@ -26,7 +26,7 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>ABOUT</NavLink>
 
@@ -35,7 +35,7 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>GENERAL CHARACTERS</NavLink>
 
@@ -44,7 +44,7 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>SCI-fI CHARACTERS</NavLink>
 
@@ -53,7 +53,7 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>FANTASY CHARACTERS</NavLink>
 
@@ -62,7 +62,7 @@ const Navigation = () => {
             exact
             style={link}
             activeStyle={{
-                background: 'black',
+                background: "#191d32",
                 color: 'white'
             }}>SEARCH</NavLink>
         </div>

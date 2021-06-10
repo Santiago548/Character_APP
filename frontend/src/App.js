@@ -14,6 +14,7 @@ import General from "./containers/GeneralCharacters"
 import Scifi from "./containers/ScifiCharacters"
 import Fantasy from "./containers/FantasyCharacters"
 import Navigation from './components/Navigation'
+import Footer from './components/Footer';
 
 class App extends Component {
 
@@ -41,6 +42,7 @@ class App extends Component {
             <Route exact path="/fantasy" component={Fantasy} />
             <Route exact path="/search" component={Search} />
           </Switch>
+          <Footer />
       </Router>
     );  
   }

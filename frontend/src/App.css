@@ -247,3 +247,17 @@ hr {
 .character-title-filter {
   text-align: center;
 }
+
+.navlink {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navlink:hover {
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+  background-color: yellow;
+}
