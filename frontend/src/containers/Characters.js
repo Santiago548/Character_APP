@@ -13,9 +13,9 @@ class Characters extends Component {
         <hr className='hr-title'/>
           <h2 className='app-title'>| CHARACTERS |</h2>
         <div>
-          <div>
-            <div>
-              {characters.map(character => <CharacterCard key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
+          <div >
+            <div className='card-container'>
+              {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
             </div>
           </div>
         </div>

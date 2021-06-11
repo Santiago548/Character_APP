@@ -1,16 +1,14 @@
 import React from 'react';
 
 const CharacterCard = ({ character, deleteCharacter }) => 
-  <div>
+  <div className='character-card-filter'>
     <div className="character-card">
       <div className="card-block">
         <fieldset className="card-fieldset">
           <button 
             type="character-button" 
             onClick={() => deleteCharacter(character.id)} 
-            className="btn btn-danger"
-          >
-            <span aria-hidden="true">&times;</span>
+            >
           </button>
           <div className='character-info'> 
             <fieldset className='character-info'>
@@ -34,12 +32,8 @@ const CharacterCard = ({ character, deleteCharacter }) =>
             </div>
         </fieldset>
       </div>
-      <div className="float-right"> 
-        <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
-        </div>
        
       </div>
     </div>
-  </div>;
 
 export default CharacterCard;
