@@ -55,11 +55,10 @@ class CharacterForm extends Component {
     render() {
         return (
             <div>
-                 <hr />
+                 <hr className='hr-title'/>
                     <div>
                         <h2 className='app-title'>| CHARACTER FORM |</h2>
                     </div>
-                <hr />
                 
                 <div className='form-container'>
                 <div className='notes'>
@@ -109,6 +108,8 @@ class CharacterForm extends Component {
                         </div>
                     <div className="character-form">
                         <form onSubmit={this.handleSubmit} >
+                        <h3>FORM</h3>
+                        <hr />
                         <label className='input-label'>Setting:</label>
                         <select name="setting" value={this.state.setting} onChange={this.handleChange} className="form-input">
                                 <option></option>
@@ -116,13 +117,13 @@ class CharacterForm extends Component {
                                 <option name="setting" value="Sci-fi">Sci-fi</option>
                                 <option name="setting" value="Fantasy">Fantasy</option>
                             </select>
-                            <br />
-                            <label className='input-label'>firstname:</label>
+                            <br /><br />
+                            <label className='input-label'>Firstname:</label>
                             <input type="text" name="firstname" className="form-input" value={this.state.firstname} onChange={this.handleChange} />
-                            <br/>
-                            <label className='input-label'>lastname: </label>
+                            <br/><br />
+                            <label className='input-label'>Lastname: </label>
                             <input type="text" name="lastname" className="form-input" value={this.state.lastname} onChange={this.handleChange}/>
-                            <br/>
+                            <br/><br />
                             <label className='input-label'>Gender: </label>
                             <select name="gender" value={this.state.gender} onChange={this.handleChange} className="form-input">
                                 <option></option>
@@ -130,19 +131,19 @@ class CharacterForm extends Component {
                                 <option name="gender" value="Female">Female</option>
                                 <option name="gender" value="Non-Binary">Non-Binary</option>
                             </select>
-                            <br/>
+                            <br/> <br/>
                             <label className='input-label'>Age: </label>
                             <input type="number" className="form-input" name= "age" value={this.state.age} min='1' onChange={this.handleChange}/>
-                            <br/>
+                            <br/> <br/>
                             <label className='input-label'>Region: </label>
                             <input type="text" name="region" className="form-input" value={this.state.region} onChange={this.handleChange} />
-                            <br/>
+                            <br/> <br/>
                             <label className='input-label'>Trait 1: </label>
                             <input type="text" name="trait1" className="form-input" value={this.state.trait1} onChange={this.handleChange} />
-                            <br/>
+                            <br/> <br/>
                             <label className='input-label'>Trait 2: </label>
                             <input type="text" name="trait2" className="form-input" value={this.state.trait2} onChange={this.handleChange} />
-                            <br/>
+                            <br/> <br/>
                             <label className='input-label'>Background: </label>
                             <textarea type="text" name="background" className="form-input-background" value={this.state.background} onChange={this.handleChange}/>
                             <br/>

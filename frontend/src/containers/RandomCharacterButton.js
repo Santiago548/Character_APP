@@ -82,9 +82,8 @@ class RandomCharacterButton extends Component {
     render() {
         return (
             <div>
-                <hr />
+                <hr className='hr-title'/>
                 <div><h2 className='app-title'>| RANDOM |</h2></div>
-                <hr />
                 <fieldset className='random-form'>     
                 <form onSubmit={this.handleClick} >
                     <button type="submit" className='random-button'>Random General Character</button>

@@ -20,6 +20,9 @@
 
 .app-title {
   background-color: #282F44;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  padding: 10px;
   color: white;
   text-align: center;
   min-height: 5vh;
@@ -113,14 +116,14 @@
   border: rgb(0, 0, 0);
   border-style: ridge;
   height: 40px;
-  width: 95%;
+  width: 90%;
 }
 
 .form-input-background {
   border: rgb(0, 0, 0);
   border-style: ridge;
   height: 40px;
-  width: 95%;
+  width: 90%;
 }
 
 .character-form {
@@ -218,7 +221,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 40% 0% 20% 40%;
+  grid-template-columns: 42% 0% 18% 40%;
   grid-template-rows: auto;
   justify-items: stretch;
   grid-template-areas: 
@@ -241,8 +244,21 @@
 }
 
 hr {
-  background-color: black;
-  height: 3px;
+  background-color: #000000;
+  padding: 1px;
+  margin: 2px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.hr-title {
+  background-color: #ffffff;
+  padding: 2px;
+  margin: 0px;
+  border: 4spx solid #ffffff;
+  border-radius: 3px;
+  width: 100%;
+  border-color: white;
 }
 
 .example {

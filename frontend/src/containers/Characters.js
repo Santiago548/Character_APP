@@ -10,9 +10,8 @@ class Characters extends Component {
     const { characters, deleteCharacter } = this.props;
     return (
       <div>
-        <hr />
+        <hr className='hr-title'/>
           <h2 className='app-title'>| CHARACTERS |</h2>
-        <hr />
         <div>
           <div>
             <div>
