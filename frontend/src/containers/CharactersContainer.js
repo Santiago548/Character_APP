@@ -15,10 +15,10 @@ class CharactersContainer extends Component {
                 <div className='container'>
                     <CharacterForm />
                     <br/>
-                    <div>
-                    <RandomCharacterButton />
-                    <RandomCharacterScifi />
-                    <RandomCharacterFantasy />
+                     <div>
+                        <RandomCharacterButton />
+                        <RandomCharacterScifi />
+                        <RandomCharacterFantasy />
                     </div>
                 <div>
                     {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}

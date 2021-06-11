@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import { addCharacter } from '../actions/characters'
 import { connect } from 'react-redux'
-// import { RegionInput } from '../components/regionInput'
 
 class CharacterForm extends Component {
     state = {

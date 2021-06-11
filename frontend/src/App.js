@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 import './App.css';
 import { getCharacters } from './actions/characters'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { About } from "./containers/About"
+import { About } from "./components/About"
 import Search  from "./containers/Search"
 import Home from "./containers/CharactersContainer"
 import General from "./containers/GeneralCharacters"

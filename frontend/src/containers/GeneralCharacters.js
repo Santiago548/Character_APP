@@ -7,7 +7,7 @@ class GeneralCharacters extends Component {
 
   componentDidMount(){
     this.props.getGeneralCharacters()
-    console.log('hi')
+    console.log('hi from General characters list')
   }
 
     render() {
