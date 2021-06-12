@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   font-size: calc(6px + 2vmin);
+  height: 100%;
+  width: 100%;
 }
 
 .app-title {
@@ -38,7 +40,7 @@
   align-items: left;
   justify-content: left;
   padding: 10px;
-  height: 95%;
+  height: 100%;
   width: 95%;
   border-radius: 10px;
   border-width: 5px;

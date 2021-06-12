@@ -1,14 +1,14 @@
 import React from 'react';
 
 const CharacterCard = ({ character, deleteCharacter }) => 
-  <div className='character-card-filter'>
-    <div className="character-card">
-      <div className="card-block">
-        <fieldset className="card-fieldset">
+  <fieldset className="card-fieldset">
+    <div className='character-card-filter'>
+      <div className="character-card">
+        <div className="card-block">
           <button 
             type="character-button" 
             onClick={() => deleteCharacter(character.id)} 
-            >
+           >
           </button>
           <div className='character-info'> 
             <fieldset className='character-info'>
@@ -29,11 +29,10 @@ const CharacterCard = ({ character, deleteCharacter }) =>
                 <b>Background:</b> {character.background}<br />
                 <b>Story Hook:</b> {character.storyhook}<br />
             </fieldset>
-            </div>
-        </fieldset>
-      </div>
-       
+          </div>
+        </div>
       </div>
     </div>
+  </fieldset>
 
 export default CharacterCard;
