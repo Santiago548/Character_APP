@@ -1,7 +1,5 @@
-
 import { connect } from 'react-redux'
 import React, { Component } from 'react'
-
 import CharacterForm from './CharacterForm';
 import Characters from './Characters'
 import RandomCharacterButton from './RandomCharacterButton';

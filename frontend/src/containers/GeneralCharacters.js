@@ -15,19 +15,20 @@ class GeneralCharacters extends Component {
 
         return (
             <div>
-            <h1 className='character-title-filter'>GENERAL CHARACTERS LIST</h1>
-            <hr className='hr-title'/>
-            <div className='filter-container'>
-              <GeneralBackground />
-                <div className='item-a'>
-                  {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
-                </div>
+              <h1 className='character-title-filter'>GENERAL CHARACTERS LIST</h1>
+              <hr className='hr-title'/>
+                <hr className='hr-title'/>
+                  <div className='filter-container'>
+                    <GeneralBackground />
+                    <div className='item-a'>
+                    {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
+                  </div>
                 <GeneralBackground />
               </div>
-        </div>
-    )
-    }
-}
+          </div>
+          )
+        }
+      }
 
 const mapStateToProps = (state) => {
     return {

@@ -57,14 +57,7 @@ const Navigation = () => {
                 color: 'white'
             }}>FANTASY CHARACTERS</NavLink>
 
-            <NavLink
-            to='/search'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>SEARCH</NavLink>
+          
         </div>
     )
 }

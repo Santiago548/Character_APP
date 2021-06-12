@@ -36,7 +36,6 @@ const CharacterCard = ({ character, deleteCharacter }) =>
           </fieldset>
         </div>
       </div>
-    <br />
   </div>
 
 export default CharacterCard;

@@ -14,19 +14,20 @@ class FantasyCharacters extends Component {
     render() {
 
         return (
-        <div>
+          <div>
             <h1 className='character-title-filter'>FANTASY CHARACTERS LIST</h1>
-            <div className='filter-container'>
-              <FantasyBackground />
-                <div className='item-a'>
-                  {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
-                </div>
+            <hr className='hr-title'/>
+              <div className='filter-container'>
                 <FantasyBackground />
-            </div>
-        </div>
-    )
-    }
-}
+                  <div className='item-a'>
+                    {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
+                  </div>
+                <FantasyBackground />
+              </div>
+          </div>
+          )
+        }
+      }
 
 const mapStateToProps = (state) => {
     return {

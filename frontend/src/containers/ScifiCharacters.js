@@ -17,6 +17,7 @@ class ScifiCharacters extends Component {
         return (
           <div>
             <h1 className='character-title-filter'>SCI-FI CHARACTERS LIST</h1>
+            <hr className='hr-title'/>
               <div className='filter-container'>
                 <ScifiBackground />
                 <div className='item-a'>

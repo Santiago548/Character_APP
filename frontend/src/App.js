@@ -1,14 +1,9 @@
-// deleteCharacter
-// import CharacterForm from './containers/CharacterForm';
-// import Characters from './containers/Characters'
-// import RandomCharacterButton from './containers/RandomCharacterButton';
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './App.css';
 import { getCharacters } from './actions/characters'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { About } from "./components/About"
-import Search  from "./containers/Search"
 import Home from "./containers/CharactersContainer"
 import General from "./containers/GeneralCharacters"
 import Scifi from "./containers/ScifiCharacters"
@@ -40,7 +35,6 @@ class App extends Component {
             <Route exact path="/general" component={General} />
             <Route exact path="/scifi" component={Scifi} />
             <Route exact path="/fantasy" component={Fantasy} />
-            <Route exact path="/search" component={Search} />
           </Switch>
           <Footer />
       </Router>
