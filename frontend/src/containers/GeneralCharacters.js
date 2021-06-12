@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getGeneralCharacters } from '../actions/characters'
-import Characters from './Characters'
+import CharactersFiltered from './CharactersFiltered'
 
 class GeneralCharacters extends Component {
 
@@ -15,7 +15,11 @@ class GeneralCharacters extends Component {
         return (
             <div>
             <h1 className='character-title-filter'>GENERAL CHARACTERS LIST</h1>
-            {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
+            <div className='filter-container'>
+                <div className='item-a'>
+                  {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
+                </div>
+              </div>
         </div>
     )
     }

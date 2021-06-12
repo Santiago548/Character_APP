@@ -2,8 +2,8 @@ import React from 'react';
 
 const CharacterCard = ({ character, deleteCharacter }) => 
 
-<div>
-    <div className="card card-inverse card-success card-primary mb-3 text-center">
+<div className='item-a'>
+    <div className="card-card-inverse-card-success-card-primary-mb-3-text-center">
       <div className="card-block">
         <fieldset className="card-fieldset">
           <button 
