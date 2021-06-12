@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getFantasyCharacters } from '../actions/characters'
+import FantasyBackground from '../components/FantasyBackground'
 import CharactersFiltered from './CharactersFiltered'
 
 class FantasyCharacters extends Component {
@@ -16,9 +17,11 @@ class FantasyCharacters extends Component {
         <div>
             <h1 className='character-title-filter'>FANTASY CHARACTERS LIST</h1>
             <div className='filter-container'>
+              <FantasyBackground />
                 <div className='item-a'>
                   {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
                 </div>
+                <FantasyBackground />
             </div>
         </div>
     )

@@ -59,7 +59,7 @@ class CharacterForm extends Component {
                     <div>
                         <h2 className='app-title'>| CHARACTER FORM |</h2>
                     </div>
-                
+                    <hr className='hr-title'/>
                 <div className='form-container'>
                 <div className='notes'>
                             <h3>HOW TO USE THE APP:</h3>

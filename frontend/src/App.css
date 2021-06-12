@@ -23,7 +23,7 @@
 .app-title {
   background-color: #282F44;
   margin-top: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
   padding: 10px;
   color: white;
   text-align: center;
@@ -254,13 +254,13 @@ hr {
 }
 
 .hr-title {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 2px;
   margin: 0px;
-  border: 4spx solid #ffffff;
+  border: 4spx solid #000000;
   border-radius: 3px;
   width: 100%;
-  border-color: white;
+  border-color: rgb(0, 0, 0);
 }
 
 .example {
@@ -278,18 +278,38 @@ hr {
   width: 100%;
 }
 
-
 .item-a {
   grid-column-start: 2;
   grid-column-end: 2;
 }
 
+.scifi-filter-background {
+  height: 100%;
+  background-image: url("./images/scifi-wallpaper.jpg");
+  background-repeat: repeat;
+}
+
+.general-filter-background {
+  height: 100%;
+  background-image: url("./images/books.jpg");
+  background-repeat: repeat;
+}
+
+.fantasy-filter-background {
+  height: 100%;
+  background-image: url("./images/fantasy-background.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+
 .filter-container {
   display: grid;
+  background-color: black;
   grid-template-columns: 25% 50% 25% 0%;
   grid-template-rows: auto;
   justify-items: stretch;
   grid-template-areas: 
-  ".. card-fieldset . ."
+  ". card-fieldset . . "
   ;
 }
