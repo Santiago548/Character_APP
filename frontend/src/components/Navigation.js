@@ -31,7 +31,7 @@ const Navigation = () => {
             }}>ABOUT</NavLink>
 
             <NavLink
-            to='/general'
+            to='/characters/general'
             exact
             style={link}
             activeStyle={{
@@ -40,7 +40,7 @@ const Navigation = () => {
             }}>GENERAL CHARACTERS</NavLink>
 
             <NavLink
-            to='/scifi'
+            to='/characters/scifi'
             exact
             style={link}
             activeStyle={{
@@ -49,7 +49,7 @@ const Navigation = () => {
             }}>SCI-fI CHARACTERS</NavLink>
 
             <NavLink
-            to='/fantasy'
+            to='/characters/fantasy'
             exact
             style={link}
             activeStyle={{

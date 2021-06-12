@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { addCharacter } from '../actions/characters'
 import { connect } from 'react-redux'
 
-class RandomCharacterButton extends Component {
+class RandomCharacterGeneral extends Component {
 
     constructor(props) {
         super(props)
@@ -21,13 +21,6 @@ class RandomCharacterButton extends Component {
         storyhook: "",
     }
 }
-
-    // handleChange = event => {
-    //     const {name, value} = event.target
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
 
     handleClick = event => {
         event.preventDefault()
@@ -95,4 +88,4 @@ class RandomCharacterButton extends Component {
     }
 }
 
-export default connect(null, { addCharacter })(RandomCharacterButton)
+export default connect(null, { addCharacter })(RandomCharacterGeneral)

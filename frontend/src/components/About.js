@@ -4,9 +4,10 @@ export const About = () => {
     return (
         <div>
             <h1 className='character-title-filter'>About Page</h1>
-            <fieldset>
+            <hr className='hr-title'/>
+        
                <h2 className='character-title-filter'>I created this application to for anyone writting stories or trying to craft worlds who has trouble making characters. or just for practicing creating and writting stories. </h2>
-                    <hr />
+                    <hr className='character-title-filter'/>
                     <h3 className='character-title-filter'>Here is some tips to for good character development:</h3>
                 <ul>
                     <li><h4>Create a background for your character</h4>
@@ -115,7 +116,6 @@ export const About = () => {
                         </ul>
                     </li>
                 </ul>
-            </fieldset>
         </div>
     )
 }

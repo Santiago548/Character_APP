@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import React, { Component } from 'react'
 import CharacterForm from './CharacterForm';
 import Characters from './Characters'
-import RandomCharacterButton from './RandomCharacterButton';
+import RandomGeneralCharacter from './RandomGeneralCharacter';
 import RandomCharacterScifi from './RandomCharacterScifi';
 import RandomCharacterFantasy from './RandomCharacterFantasy';
 
@@ -14,7 +14,7 @@ class CharactersContainer extends Component {
                     <CharacterForm />
                     <br/>
                      <div>
-                        <RandomCharacterButton />
+                        <RandomGeneralCharacter />
                         <RandomCharacterScifi />
                         <RandomCharacterFantasy />
                     </div>
