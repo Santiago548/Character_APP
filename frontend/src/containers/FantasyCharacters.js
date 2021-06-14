@@ -15,6 +15,7 @@ class FantasyCharacters extends Component {
 
     return (
       <div>
+        <hr className='hr-title' />
         <h1 className='character-title-filter'>FANTASY CHARACTERS LIST</h1>
         <hr className='hr-title' />
         <div className='filter-container'>

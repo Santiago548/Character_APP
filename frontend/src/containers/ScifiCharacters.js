@@ -7,35 +7,36 @@ import CharactersFiltered from './CharactersFiltered'
 
 class ScifiCharacters extends Component {
 
-    componentDidMount(){
-        this.props.getScifiCharacters()
-        console.log('hi scifi characters')
-      }
-    
-    render() {
+  componentDidMount() {
+    this.props.getScifiCharacters()
+    console.log('hi scifi characters')
+  }
 
-        return (
-          <>
-            <h1 className='character-title-filter'>SCI-FI CHARACTERS LIST</h1>
-            <hr className='hr-title'/>
-              <div className='filter-container'>
-                <ScifiBackground />
-                <div className='item-a'>
-                  {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
-                </div>
-                <ScifiBackground />
-              </div>
-              <hr className='hr-title'/>
-          </>
+  render() {
+
+    return (
+      <>
+        <hr className='hr-title' />
+        <h1 className='character-title-filter'>SCI-FI CHARACTERS LIST</h1>
+        <hr className='hr-title' />
+        <div className='filter-container'>
+          <ScifiBackground />
+          <div className='item-a'>
+            {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersFiltered />}
+          </div>
+          <ScifiBackground />
+        </div>
+        <hr className='hr-title' />
+      </>
     )
-    }
+  }
 }
 
 const mapStateToProps = (state) => {
-    return {
-      characters: state.characterReducer.characters,
-      loading: state.characterReducer.loading
-    }
+  return {
+    characters: state.characterReducer.characters,
+    loading: state.characterReducer.loading
   }
+}
 
 export default connect(mapStateToProps, { getScifiCharacters })(ScifiCharacters);

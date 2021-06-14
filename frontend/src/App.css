@@ -8,7 +8,6 @@
 }
 
 .app-header {
-  /* grid-area: 'app-header'; */
   background: #191d32;
   color: white;
   text-align: center;
@@ -238,6 +237,10 @@
   ;
 }
 
+.about-title {
+  text-align: center;
+}
+
 .form-container {
   display: grid;
   grid-template-columns: 50% 50% 0% 0%;
@@ -264,8 +267,6 @@ hr {
   background-color: #000000;
   padding: 2px;
   margin: 0px;
-  border: 4spx solid #000000;
-  border-radius: 3px;
   width: 100%;
   border-color: rgb(0, 0, 0);
 }
@@ -276,6 +277,16 @@ hr {
 
 .character-title-filter {
   text-align: center;
+  background: #191d32;
+  color: white;
+  text-align: center;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
 }
 
 .navlink {

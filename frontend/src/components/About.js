@@ -6,9 +6,9 @@ export const About = () => {
             <h1 className='character-title-filter'>About Page</h1>
             <hr className='hr-title' />
 
-            <h2 className='character-title-filter'>I created this application to for anyone writting stories or trying to craft worlds who has trouble making characters. or just for practicing creating and writting stories. </h2>
-            <hr className='character-title-filter' />
-            <h3 className='character-title-filter'>Here is some tips to for good character development:</h3>
+            <h2 className='about-title'>I created this application to for anyone writting stories or trying to craft worlds who has trouble making characters. or just for practicing creating and writting stories. </h2>
+            <hr className='hr-title' />
+            <h3 className='about-title'>Here is some tips to for good character development:</h3>
             <ul className='about-page'>
                 <li><h4>Create a background for your character</h4>
                     <ul>
