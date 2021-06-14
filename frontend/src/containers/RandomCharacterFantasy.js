@@ -22,12 +22,6 @@ class RandomCharacterFantasy extends Component {
     }
 }
 
-    // handleChange = event => {
-    //     const {name, value} = event.target
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
 
     handleClick = event => {
         event.preventDefault()

@@ -11,11 +11,9 @@ class CharactersFiltered extends Component {
     return (
       <div>
         <hr className='hr-title'/>
-        <div>
           <div >
             {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
           </div>
-        </div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import React, { Component } from 'react'
 import CharacterForm from './CharacterForm';
-import Characters from './Characters'
+import CharactersHome from './CharactersHome'
 import RandomGeneralCharacter from './RandomGeneralCharacter';
 import RandomCharacterScifi from './RandomCharacterScifi';
 import RandomCharacterFantasy from './RandomCharacterFantasy';
@@ -19,7 +19,7 @@ class CharactersContainer extends Component {
                         <RandomCharacterFantasy />
                     </div>
                 <div>
-                    {this.props.loading ? <h5>Loading Characters...</h5> : <Characters />}
+                    {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersHome />}
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ export const About = () => {
                <h2 className='character-title-filter'>I created this application to for anyone writting stories or trying to craft worlds who has trouble making characters. or just for practicing creating and writting stories. </h2>
                     <hr className='character-title-filter'/>
                     <h3 className='character-title-filter'>Here is some tips to for good character development:</h3>
-                <ul>
+                <ul className='about-page'>
                     <li><h4>Create a background for your character</h4>
                         <ul>
                         Our realities are shaped by where we’ve been, where we are, and where we want to go.

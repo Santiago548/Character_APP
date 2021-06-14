@@ -24,6 +24,7 @@ class FantasyCharacters extends Component {
                   </div>
                 <FantasyBackground />
               </div>
+              <hr className='hr-title'/>
           </div>
           )
         }

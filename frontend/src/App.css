@@ -33,6 +33,11 @@
   width: 100%;
 }
 
+.about-page {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .card-fieldset {
   background-color: rgb(27, 195, 225);
   display: flex;
@@ -144,6 +149,7 @@
   grid-area: 'random';
   justify-items: center;
   justify-content: center;
+  text-align: center;
   padding: 30px;
   background-color: rgb(0, 0, 0);
   margin: 10px;
@@ -306,7 +312,7 @@ hr {
 .filter-container {
   display: grid;
   background-color: black;
-  grid-template-columns: 25% 50% 25% 0%;
+  grid-template-columns: 30% 40% 30% 0%;
   grid-template-rows: auto;
   justify-items: stretch;
   grid-template-areas: 

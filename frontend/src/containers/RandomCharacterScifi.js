@@ -22,13 +22,6 @@ class RandomCharacterScifi extends Component {
     }
 }
 
-    // handleChange = event => {
-    //     const {name, value} = event.target
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
-
     handleClick = event => {
         event.preventDefault()
         function range(start, end) {

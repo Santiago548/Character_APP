@@ -25,6 +25,7 @@ class ScifiCharacters extends Component {
                 </div>
                 <ScifiBackground />
               </div>
+              <hr className='hr-title'/>
           </div>
     )
     }
