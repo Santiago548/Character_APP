@@ -11,53 +11,53 @@ const link = {
 
 const Navigation = () => {
     return (
-        <div className='navlink'>   
+        <div className='navlink'>
             <NavLink
-            to='/'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>HOME</NavLink>
+                to='/'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>HOME</NavLink>
 
             <NavLink
-            to='/about'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>ABOUT</NavLink>
+                to='/about'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>ABOUT</NavLink>
 
             <NavLink
-            to='/characters/general'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>GENERAL CHARACTERS</NavLink>
+                to='/characters/general'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>GENERAL CHARACTERS</NavLink>
 
             <NavLink
-            to='/characters/scifi'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>SCI-fI CHARACTERS</NavLink>
+                to='/characters/scifi'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>SCI-fI CHARACTERS</NavLink>
 
             <NavLink
-            to='/characters/fantasy'
-            exact
-            style={link}
-            activeStyle={{
-                background: "#191d32",
-                color: 'white'
-            }}>FANTASY CHARACTERS</NavLink>
+                to='/characters/fantasy'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>FANTASY CHARACTERS</NavLink>
 
-          
+
         </div>
     )
 }

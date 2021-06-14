@@ -6,14 +6,13 @@ import { deleteCharacter } from '../actions/characters';
 class CharactersFiltered extends Component {
 
   render() {
-    // const characters = this.props.characters.map((character, i) => <fieldset className="App-fieldset"><button className='character-button' id={character.id} onClick={this.handleclick}>x</button> <div className='character-info' key={i}> First Name: {character.firstname} <br /> Last Name: {character.lastname}</div></fieldset>)
     const { characters, deleteCharacter } = this.props;
     return (
       <div>
-        <hr className='hr-title'/>
-          <div >
-            {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
-          </div>
+        <hr className='hr-title' />
+        <div >
+          {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting} />)}
+        </div>
       </div>
     );
   }

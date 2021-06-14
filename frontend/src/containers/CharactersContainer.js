@@ -7,33 +7,32 @@ import RandomCharacterScifi from './RandomCharacterScifi';
 import RandomCharacterFantasy from './RandomCharacterFantasy';
 
 class CharactersContainer extends Component {
-    render (){
+    render() {
         return (
             <div>
                 <div className='container'>
                     <CharacterForm />
-                    <br/>
-                     <div>
+                    <br />
+                    <div>
                         <RandomGeneralCharacter />
                         <RandomCharacterScifi />
                         <RandomCharacterFantasy />
                     </div>
-                <div>
-                    {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersHome />}
+                    <div>
+                        {this.props.loading ? <h5>Loading Characters...</h5> : <CharactersHome />}
+                    </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 }
 
 const mapStateToProps = (state) => {
     return {
-      characters: state.characterReducer.characters,
-      loading: state.characterReducer.loading
+        characters: state.characterReducer.characters,
+        loading: state.characterReducer.loading
     }
-  }
-  
-  
-  export default connect(mapStateToProps)(CharactersContainer);
-  
+}
+
+
+export default connect(mapStateToProps)(CharactersContainer);

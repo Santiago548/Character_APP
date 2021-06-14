@@ -139,6 +139,7 @@
   border-style: ridge;
   border-radius: 10px;
   border-width: 5px;
+  padding-bottom: 10px;
 }
 
 .character-card {

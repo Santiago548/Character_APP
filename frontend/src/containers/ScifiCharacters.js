@@ -15,7 +15,7 @@ class ScifiCharacters extends Component {
     render() {
 
         return (
-          <div>
+          <>
             <h1 className='character-title-filter'>SCI-FI CHARACTERS LIST</h1>
             <hr className='hr-title'/>
               <div className='filter-container'>
@@ -26,7 +26,7 @@ class ScifiCharacters extends Component {
                 <ScifiBackground />
               </div>
               <hr className='hr-title'/>
-          </div>
+          </>
     )
     }
 }

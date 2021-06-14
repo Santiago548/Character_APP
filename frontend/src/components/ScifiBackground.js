@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterBackground = () => 
+const FilterBackground = () =>
   <div className='scifi-filter-background'>
   </div>;
 

@@ -9,18 +9,18 @@ class CharactersHome extends Component {
     const { characters, deleteCharacter } = this.props;
     return (
       <div>
-        <hr className='hr-title'/>
-          <h2 className='app-title'>| CHARACTERS |</h2>
-        <hr className='hr-title'/>
-          <div>
-            <div >
-            {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting}/>)}
+        <hr className='hr-title' />
+        <h2 className='app-title'>| CHARACTERS |</h2>
+        <hr className='hr-title' />
+        <div>
+          <div >
+            {characters.map(character => <CharacterCard className='card-container-filter' key={character.id} deleteCharacter={deleteCharacter} character={character} setting={character.setting} />)}
           </div>
         </div>
       </div>
-      );
-    }
+    );
   }
+}
 
 const mapStateToProps = state => {
   return ({
