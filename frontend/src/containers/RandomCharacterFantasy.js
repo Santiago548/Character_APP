@@ -179,7 +179,7 @@ class RandomCharacterFantasy extends Component {
             <div>
                 <fieldset className='random-form'>
                     <form onSubmit={this.handleClick} >
-                        <button type="submit" className='random-button'>Random Fantasy Character</button>
+                        <button type="submit" className='random-button'>Random <b>Fantasy</b> Character</button>
                     </form>
                 </fieldset>
             </div>

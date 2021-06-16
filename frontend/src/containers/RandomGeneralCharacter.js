@@ -80,7 +80,7 @@ class RandomCharacterGeneral extends Component {
                 <hr className='hr-title' />
                 <fieldset className='random-form'>
                     <form onSubmit={this.handleClick} >
-                        <button type="submit" className='random-button'>Random General Character</button>
+                        <button type="submit" className='random-button'>Random <b>General</b> Character</button>
                     </form>
                 </fieldset>
             </div>
