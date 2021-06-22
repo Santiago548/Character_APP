@@ -1,4 +1,4 @@
-export default (state = { characters: [], loading: false}, action) => {
+export default (state = { characters: [], likes: [], loading: false}, action) => {
     switch(action.type){
         case "LOADING_CHARACTERS":
             return {
@@ -69,7 +69,20 @@ export default (state = { characters: [], loading: false}, action) => {
                 characters: [...state.characters.filter(character => character.id !== parseInt(action.payload))],
                 loading: false
             }
+//////////////////////////
+        case "LOADING_LIKES":
+            return {
+                ...state,
+                loading: false
+            }
 
+        case "ADDING_LIKES":
+            return {
+                ...state,
+                likes: [...state.likes, action.payload],
+                loading: false
+            }
+////////////////////////
         default:
             return state
     }

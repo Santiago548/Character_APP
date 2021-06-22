@@ -1,4 +1,5 @@
 import React from 'react';
+import Likes from '../containers/Likes.js'
 
 const CharacterCard = ({ character, deleteCharacter }) =>
 
@@ -13,11 +14,17 @@ const CharacterCard = ({ character, deleteCharacter }) =>
       <div className='character-info'>
         <fieldset className='character-info'>
           <legend className='card-legend'><b>CHARACTER INFORMATION:</b></legend>
-          <b>Setting:</b> {character.setting}<br />
-          <b>Name</b> {character.firstname} {character.lastname}< br />
-          <b>Gender:</b> {character.gender}<br />
-          <b>Age:</b> {character.age}<br />
-          <b>Region:</b> {character.region}<br />
+          <div className='basic-info-container'>
+          <div className='basic-info'>
+            
+            <b>Setting:</b> {character.setting}<br />
+            <b>Name</b> {character.firstname} {character.lastname}< br />
+            <b>Gender:</b> {character.gender}<br />
+            <b>Age:</b> {character.age}<br />
+            <b>Region:</b> {character.region}<br />
+          </div>
+            <b className='center-like'>LIKES<Likes/></b>
+          </div>
         </fieldset>
         <fieldset className='personality-traits'>
           <legend className='card-legend'><b>PERSONALITY TRAITS:</b></legend>

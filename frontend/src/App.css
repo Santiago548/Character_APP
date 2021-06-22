@@ -331,3 +331,56 @@ hr {
   ". card-fieldset . . "
   ;
 }
+
+.basic-info-container {
+  display: grid;
+  grid-template-columns: 80% 20% 0% 0%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "basic-info like-button . .";
+}
+
+.basic-info {
+  grid-area: 'basic-info';
+}
+
+.like-button {
+  grid-area: 'like-button';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 195, 225);
+  border: solid;
+  border-radius: 50%;
+  box-shadow: 0 9px #999;
+}
+
+.like-button:hover {
+  grid-area: 'like-button';
+  background-color: red
+}
+
+.like-button:active {
+  grid-area: 'like-button';
+  background-color: gold;
+  color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.user-likes {
+  width: 60%;
+  justify-items: center;
+}
+
+.center-like {
+  text-align: center;
+}

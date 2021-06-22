@@ -17,6 +17,7 @@ class GeneralCharacters extends Component {
       <div>
         <hr className='hr-title' />
         <h1 className='character-title-filter'>GENERAL CHARACTERS LIST</h1>
+        
         <hr className='hr-title' />
         <hr className='hr-title' />
         <div className='filter-container'>
