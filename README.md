@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,6 +10,102 @@ In the project directory, you can run:
 ### `rails s`
 
 ### `npm start`
+=======
+# Character_APP
+
+<br />
+<p align="center">
+  <a href="https://github.com/Santiago548/repo_name">
+    <img src="frontend\src\images\title.png" alt="Logo" width="400" height="200">
+  </a>
+
+  <h3 align="center">Character Generator</h3>
+
+  <p align="center">
+    Use this application to quickly create Characters for RPGs or for writting for stories. can use the form to make a character card or can use the generator button to create characters for three diffrent genres. The genres include general, sci-fi, and fantasy.
+    <br />
+    <a href="https://github.com/Santiago548/Character_APP"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <!-- <a href="https://github.com/Santiago548/Character_APP">View Demo</a>
+    · -->
+    <a href="https://github.com/Santiago548/Character_APP/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Santiago548/Character_APP/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+I created this application to make it easeir for myself to quickly create random characters for diffrent RPG campaigns or for quick character prompts for writting stories. Each character once generated has two traits a story hook and background to build off of once generated. 
+Thank you checking it out and for any help you can give in improving functionaly. 
+
+### Built With
+
+* []()Ruby 2.6.1
+* []()Rails 6.1.3 API vackend
+* []()Javascript
+* []()HTML
+* []()CSS
+* []()REACT
+* []()REDUX
+
+<!-- GETTING STARTED -->
+## Getting Started 
+### Installation
+
+To get a local copy up and running follow these simple steps.
+* []()install all gem files
+```sh
+$ bundle install
+```
+* []() migrate and seed the database
+```sh
+$ rails db:migrate
+$ rails db:seed
+```
+* []() To Start the Server
+```sh
+$ rails s
+```
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Santiago548/NPC_Generator
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   ### `npm start`
+>>>>>>> 79b04017949615f604c7d4e50fcee5381e9db110
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -40,6 +137,50 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/Santiago548/repo_name/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+S
+<!-- CONTACT -->
+## Contact
+
+Your Name - Dominic Barajas
+Twitter - [@TechDom2](https://twitter.com/TechDom2) 
+Email - dominicbarajas548@gmail.com 
+
+Project Link: [https://github.com/Santiago548/repo_name](https://github.com/Santiago548/repo_name)
+
+////////////////////////////////////////////////////////////
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
 
 ## Learn More
 
