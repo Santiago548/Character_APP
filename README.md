@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -10,13 +10,13 @@ In the project directory, you can run:
 ### `rails s`
 
 ### `npm start`
-=======
+
 # Character_APP
 
 <br />
 <p align="center">
   <a href="https://github.com/Santiago548/repo_name">
-    <img src="frontend\src\images\title.png" alt="Logo" width="400" height="200">
+    <img src="frontend\src\images\character_generator.png" alt="Logo" width="400" height="200">
   </a>
 
   <h3 align="center">Character Generator</h3>
