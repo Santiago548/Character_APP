@@ -23,7 +23,7 @@ const CharacterCard = ({ character, deleteCharacter }) =>
             <b>Age:</b> {character.age}<br />
             <b>Region:</b> {character.region}<br />
           </div>
-            <b className='center-like'>LIKES<Likes/></b>
+            {/* <b className='center-like'>LIKES<Likes/></b> */}
           </div>
         </fieldset>
         <fieldset className='personality-traits'>

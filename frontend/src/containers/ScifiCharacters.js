@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getScifiCharacters } from '../actions/characters'
 import ScifiBackground from '../components/ScifiBackground'
-
 import CharactersFiltered from './CharactersFiltered'
+import '../fonts/Starjedi.ttf'
 
 class ScifiCharacters extends Component {
 
@@ -15,7 +15,7 @@ class ScifiCharacters extends Component {
   render() {
 
     return (
-      <>
+      <div className="Scifi-font">
         <hr className='hr-title' />
         <h1 className='character-title-filter'>SCI-FI CHARACTERS LIST</h1>
         <hr className='hr-title' />
@@ -27,7 +27,7 @@ class ScifiCharacters extends Component {
           <ScifiBackground />
         </div>
         <hr className='hr-title' />
-      </>
+      </div>
     )
   }
 }

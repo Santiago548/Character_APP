@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { getFantasyCharacters } from '../actions/characters'
 import FantasyBackground from '../components/FantasyBackground'
 import CharactersFiltered from './CharactersFiltered'
+import '../fonts/Fantasy.ttf'
+
 
 class FantasyCharacters extends Component {
 
@@ -14,7 +16,7 @@ class FantasyCharacters extends Component {
   render() {
 
     return (
-      <div>
+      <div className='Fantasy-font'>
         <hr className='hr-title' />
         <h1 className='character-title-filter'>FANTASY CHARACTERS LIST</h1>
         <hr className='hr-title' />

@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Fantasy";
+  src: local("Fantasy"), url("./fonts/Fantasy.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Scifi";
+  src: local("Starjedi"), url("./fonts/Starjedi.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "General";
+  src: local("bettynoir"), url("./fonts/bettynoir.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.Fantasy-font {
+  font-family: "Fantasy";
+  font-weight: bold;
+}
+
+.Scifi-font {
+  font-family: "Scifi";
+  font-weight: bold;
+}
+
+.Noir-font {
+  font-family: "bettynoir";
+  font-weight: bold;
+}
 
 .App {
   text-align: center;
@@ -20,7 +52,7 @@
 }
 
 .app-title {
-  background-color: #282F44;
+  background-color: #282f44;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
@@ -59,7 +91,7 @@
 }
 
 .character-button {
-  padding: 5px; 
+  padding: 5px;
 }
 
 .character-info {
@@ -133,7 +165,7 @@
 }
 
 .character-form {
-  grid-area: 'character-form';
+  grid-area: "character-form";
   padding-left: 10px;
   border-style: ridge;
   border-radius: 10px;
@@ -142,11 +174,11 @@
 }
 
 .character-card {
-  grid-area: 'character-card';
+  grid-area: "character-card";
 }
 
 .random-form {
-  grid-area: 'random';
+  grid-area: "random";
   justify-items: center;
   justify-content: center;
   text-align: center;
@@ -183,7 +215,9 @@
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: red}
+.button:hover {
+  background-color: red;
+}
 
 .button:active {
   background-color: gold;
@@ -207,7 +241,9 @@
   box-shadow: 0 9px #999;
 }
 
-.random-button:hover {background-color: red}
+.random-button:hover {
+  background-color: red;
+}
 
 .random-button:active {
   background-color: gold;
@@ -217,7 +253,7 @@
 }
 
 .notes {
-  grid-area: 'notes';
+  grid-area: "notes";
   padding: 3px;
   border-style: ridge;
   border-radius: 10px;
@@ -231,10 +267,9 @@
   grid-template-columns: 42% 0% 18% 40%;
   grid-template-rows: auto;
   justify-items: stretch;
-  grid-template-areas: 
-  "character-form . random-form character-card"
-  "character-form . random-form character-card"
-  ;
+  grid-template-areas:
+    "character-form . random-form character-card"
+    "character-form . random-form character-card";
 }
 
 .about-title {
@@ -246,8 +281,7 @@
   grid-template-columns: 50% 50% 0% 0%;
   grid-template-rows: auto;
   justify-items: stretch;
-  grid-template-areas: 
-  "notes character-form";
+  grid-template-areas: "notes character-form";
 }
 
 .how-to {
@@ -320,32 +354,28 @@ hr {
   background-position: center;
 }
 
-
 .filter-container {
   display: grid;
   background-color: black;
   grid-template-columns: 30% 40% 30% 0%;
   grid-template-rows: auto;
   justify-items: stretch;
-  grid-template-areas: 
-  ". card-fieldset . . "
-  ;
+  grid-template-areas: ". card-fieldset . . ";
 }
 
 .basic-info-container {
   display: grid;
   grid-template-columns: 80% 20% 0% 0%;
   grid-template-rows: auto;
-  grid-template-areas: 
-  "basic-info like-button . .";
+  grid-template-areas: "basic-info like-button . .";
 }
 
 .basic-info {
-  grid-area: 'basic-info';
+  grid-area: "basic-info";
 }
 
 .like-button {
-  grid-area: 'like-button';
+  grid-area: "like-button";
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -364,12 +394,12 @@ hr {
 }
 
 .like-button:hover {
-  grid-area: 'like-button';
-  background-color: red
+  grid-area: "like-button";
+  background-color: red;
 }
 
 .like-button:active {
-  grid-area: 'like-button';
+  grid-area: "like-button";
   background-color: gold;
   color: black;
   box-shadow: 0 5px #666;

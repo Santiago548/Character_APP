@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { getGeneralCharacters } from '../actions/characters'
 import CharactersFiltered from './CharactersFiltered'
 import GeneralBackground from '../components/GeneralBackground'
+import '../fonts/bettynoir.ttf'
 
 class GeneralCharacters extends Component {
 
@@ -14,7 +15,7 @@ class GeneralCharacters extends Component {
   render() {
 
     return (
-      <div>
+      <div className='Noir-font'>
         <hr className='hr-title' />
         <h1 className='character-title-filter'>GENERAL CHARACTERS LIST</h1>
         
