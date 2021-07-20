@@ -7,9 +7,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `rails s`
+###  ` once in backend directory`
+```sh
+$ rails s
+```
 
-### `npm start`
+### `once in frontend directory`
+```sh
+$ npm start
+```
 
 # Character_APP
 
@@ -61,7 +67,6 @@ In the project directory, you can run:
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 I created this application to make it easeir for myself to quickly create random characters for diffrent RPG campaigns or for quick character prompts for writting stories. Each character once generated has two traits a story hook and background to build off of once generated. 
@@ -105,7 +110,6 @@ $ rails s
    npm install
    ```
    ### `npm start`
->>>>>>> 79b04017949615f604c7d4e50fcee5381e9db110
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -169,10 +173,10 @@ S
 Your Name - Dominic Barajas
 Twitter - [@TechDom2](https://twitter.com/TechDom2) 
 Email - dominicbarajas548@gmail.com 
+Website - [TechnologyDom](https://technologydom.gatsbyjs.io/)
 
 Project Link: [https://github.com/Santiago548/repo_name](https://github.com/Santiago548/repo_name)
 
-////////////////////////////////////////////////////////////
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
