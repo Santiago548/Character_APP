@@ -39,6 +39,14 @@
   color: #61dafb;
 }
 
+.logo {
+  justify-content: center;
+  width: 18%;
+  height: 18%;
+  margin: auto;
+  padding: 10px;
+}
+
 .app-header {
   background: #191d32;
   color: white;
@@ -78,7 +86,7 @@
   padding: 10px;
   height: 95%;
   width: 95%;
-  border-radius: 10px;
+  border-radius: 15px;
   border-width: 5px;
 }
 
@@ -414,3 +422,16 @@ hr {
 .center-like {
   text-align: center;
 }
+
+.scifi-card-image {
+  background-image: '../images/scifi_card.png';
+}
+
+.fantasy-card-image {
+  background-image: '../images/scifi_card.jpg';
+}
+
+.general-card-image {
+  background-image: '../images/scifi_card.png';
+}
+

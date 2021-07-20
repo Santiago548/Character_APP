@@ -10,6 +10,7 @@ import Scifi from "./containers/ScifiCharacters"
 import Fantasy from "./containers/FantasyCharacters"
 import Navigation from './components/Navigation'
 import Footer from './components/Footer';
+import Logo from './images/character_generator.png'
 
 class App extends Component {
 
@@ -27,7 +28,7 @@ class App extends Component {
       <Router>
         <Navigation /> 
         <header className='app-header'>
-          <h1>Character APP</h1>
+          <img className='logo' src={Logo} />
           </header>
           <Switch>
             <Route exact path="/" component={Home} />

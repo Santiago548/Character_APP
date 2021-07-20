@@ -165,7 +165,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT © [Dominic Barajas](). See below for more information.
+Distributed under the MIT © Dominic Barajas. See below for more information.
 
 Begin license text.
 Copyright 2021

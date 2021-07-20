@@ -13,7 +13,7 @@ const CharacterCard = ({ character, deleteCharacter }) =>
       </button>
       <div className='character-info'>
         <fieldset className='character-info'>
-          <legend className='card-legend'><b>CHARACTER INFORMATION:</b></legend>
+          <legend className='card-legend'><b>CHARACTER information:</b></legend>
           <div className='basic-info-container'>
           <div className='basic-info'>
             
@@ -27,12 +27,12 @@ const CharacterCard = ({ character, deleteCharacter }) =>
           </div>
         </fieldset>
         <fieldset className='personality-traits'>
-          <legend className='card-legend'><b>PERSONALITY TRAITS:</b></legend>
+          <legend className='card-legend'><b>Personality Traits:</b></legend>
           <b>Trait 1:</b> {character.trait1}<br />
           <b>Trait 2:</b> {character.trait2}<br />
         </fieldset>
         <fieldset className='story-elements'>
-          <legend className='card-legend'><b>STORY ELEMENTS:</b></legend>
+          <legend className='card-legend'><b>Story ELEMENTS:</b></legend>
           <b>Background:</b> {character.background}<br />
           <b>Story Hook:</b> {character.storyhook}<br />
         </fieldset>
